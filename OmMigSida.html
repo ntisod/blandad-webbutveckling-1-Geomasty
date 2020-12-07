@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Om Elias Sharro</title>
+	  </head>
+  <style>
+  
+  .image1 {
+  position: absolute;
+  top: 30px;
+  left: 4px;
+  border: 11px ridge #FDFDFD;
+}
+  
+  body {
+  background-color: #ECECEC;
+  color: #444444;
+  padding: 0;
+  margin: 0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: 'Roboto';
+}
+.left-underline {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.left-underline:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: #ECECEC;
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.left-underline:hover:before, .left-underline:focus:before, .left-underline:active:before {
+  right: 0;
+}
+div.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ee6e73;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow:    0px 2px 6px 0px rgba(50, 50, 50, 0.75);
+  box-shadow:         0px 2px 6px 0px rgba(50, 50, 50, 0.75);
+  z-index: 9999999;
+}
+div.navbar > ul.navbar-container {
+  list-style-type: none;
+  margin: 0;
+  padding-left: 1em;
+  padding-right: 1em;
+  overflow: hidden;
+}
+div.navbar > ul > li.nav-item {
+  float: right;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+div.navbar > ul > li.active {
+  background-color: rgba(0, 0, 0, 0.18);
+}
+div.navbar > ul > li:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+a.nav-button {
+  font-family: 'Roboto';
+  text-decoration: none;
+  line-height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: rgba(228, 241, 254, 1);
+  transition: all 0.5s ease;
+}
+a.nav-button:hover {
+  text-decoration: none;
+}
+li.active > a.nav-button {
+  cursor: default;
+}
+.brand-logo {
+  float: left;
+  cursor: default;
+}
+.parallax {
+  height: 70vh;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.parallax.p1 {
+  background: no-repeat fixed 50% 0;
+  background-size: cover;
+  color: #fff;
+}
+.parallax.p2 {
+  background: no-repeat fixed 50% 0;
+  background-size: cover;
+  color: #fff;
+}
+
+.parallax.p3 {
+  background: no-repeat fixed 50% 0;
+  background-size: cover;
+  color: #fff;
+}
+.parallax-text {
+  width: 24em;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  border: .5em solid #fff;
+  margin-left: -10%;
+  padding: 2em 0;
+  text-align: center;
+  z-index: 999;
+}
+.parallax > div.blur-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+} 
+hgroup{
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: #fff;
+  border: 5px solid #fff;
+  padding: .5em 3em;
+  background-color: rgba(0,0,0,.2);
+  z-index: 2;
+}
+.row {
+  width: 80%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-height: 150px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.row > .col-3 {
+  width: 30%;
+  height: 100%;
+  box-sizing: border-box;
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+footer {
+  width: 100%;
+  padding-top: 20px;
+  display: block;
+  background-color: #ee6e73;
+}
+.footer-copyright {
+  font-weight: 300;
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(51, 51, 51, 0.08);
+}
+.container {
+  width: 85%;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+footer p {
+  border-left: 3px solid #ffcdd2;
+  padding-left: 15px;
+  text-indent: 20px;
+  color: #ececec;
+}
+
+  </style>
+  <body>
+  <div class="image1">
+   <img class="image1" src="https://i.ibb.co/MVvGjKQ/43234.jpg" width="170"  height="300"/>
+  </div>
+    <href= rel="stylesheet" type="text/css">
+    <div class="navbar">
+      <ul class="navbar-container">
+        <li><a href="#" class="left-underline nav-button brand-logo">Elias's top secret info site</a></li>
+        <li class="nav-item"><a href="#section-3" class="left-underline nav-button" data-scroll>Credits :D</a></li>
+        <li class="nav-item"><a href="#section-2" class="left-underline nav-button" data-scroll>More info</a></li>
+        <li class="nav-item active"><a href="#section-1" class="left-underline nav-button" data-scroll>About me</a></li>
+      </ul>
+    </div>
+    <div class="parallax p1" id="section-1">
+      <hgroup>
+        <h1>About.</h1>
+        <h2>Info.</h2>
+      </hgroup>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <h1>About me</h1>
+        <p> My name is Elias Sharro and im 17. </p>
+      </div>
+      <div class="col-3">
+        <h1>Dreams</h1>
+        <p> I dont have any. </p>
+      </div>
+      <div class="col-3">
+        <h1>Future expectations</h1>
+        <p> Nothing. </p>
+      </div>
+    </div>
+    <div class="parallax p2" id="section-2">
+      <hgroup>
+        <h1>More</h1>
+        <h2>Information!</h2>
+      </hgroup>
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <h1>A perfect desrpiction of my RIVAL Johannes<br></h1>
+         <p>
+永遠の影の中で一生を過ごした生き物のように、最も淡く、最も暗い茶色の目。
+ある場所から別の場所へとずるずるとにじみ出て、スカルク、スリンキング、リーリング、ヘッドボブが不規則に
+喉頭隆起が突き出た細い長い首には重すぎます。ずるい目。それぞれが寄生植物の巻きひげのように、不自然に長く細い指、
+到達、検索。喘鳴、泣き言、泣き言、ドラゴンのような声、オイリーな声、油を塗った後ろ髪、腰を下ろした、鋭い黒い目、偽りの笑顔、
+オオカミのようにあなたが獲物を観察するかもしれないのを見て、微笑みます。彼が侵入する夜の半分の光から現れる獣の形をとったとき、
+侵入する夜の半光から現れる獣の形をとった彼の目は、まるで世界が弱まるように広がった。
+嵐に見舞われる前に。それがヨハネス・シュムーニ、破滅以外の何物も探していない新生児の嵐です.
+</p>
+      </div>
+      <div class="col-3">
+        <h1>My top 5 favorite games of all time</h1>
+     <ol>
+  <li>Blackops 2</li>
+  <li>Rocketleague</li>
+  <li>Oppw</li>
+   <li>Minecraft</li>
+  <li>Watchdogs (the first)</li>
+</ol> 
+      </div>
+      <div class="col-3">
+        <h1>The school i go to</h1>
+		<p>i wish i never went to NTI (northern technological institute), many teachers are harsh, many cant do their job correctly, many even hate their jobs. 
+		If you ask me about it, i would say DONT BECOME a teacher unless you want to and will endure children and do your job to its full extent!</p>
+      </div>
+    </div>
+    <div class="parallax p3">
+    </div>
+    <footer>
+      <div class="row" id="section-3">
+        <div class="col-3">
+          <p>developed by: <br> Someone the king <br> <a href="https://www.ntigymnasiet.se/sodertalje/" target="_blank">Visit my school's site</a></p>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
