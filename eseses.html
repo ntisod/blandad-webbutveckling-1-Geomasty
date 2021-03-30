@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+
+<head>
+
+    <title>JavaScript Practice: Ask name</title>
+    <meta charset='utf-8'>
+
+</head>
+
+<table>
+    <tr>
+        <td>
+            <div align="right">
+                Nama Penguji
+            </div>
+        </td>
+        <td>:</td>
+        <td><select name="nama_penguji" id="nama_penguji" class="nama_pen">
+			<option value="-">------------ Penguji -----------</option>
+			<option value='fee'>One</option><option value='fie'>Two</option><option value='foe'>Three</option>		</select></td>
+    </tr>
+    <tr>
+        <td>
+            <div align="right">
+            </div>
+        </td>
+        <td>&nbsp;</td>
+        <td><select name="nama_penguji2" id="nama_penguji2" class="nama_pen">
+			<option value="-">------------ Penguji -----------</option>
+			<option value='fee'>One</option><option value='fie'>Two</option><option value='foe'>Three</option>		</select></td>
+    </tr>
+    <tr>
+        <td>
+            <div align="right">
+            </div>
+        </td>
+        <td>&nbsp;</td>
+        <td><select name="nama_penguji3" id="nama_penguji3" class="nama_pen">
+			<option value="-">------------ Penguji -----------</option>
+			<option value='fee'>One</option><option value='fie'>Two</option><option value='foe'>Three</option>		</select></td>
+    </tr>
+    <table>
+
+        <script>
+            $(".nama_pen").change(function() {
+                var SaveSpot = {};
+                // loop through same-named dropdowns
+                $.each($(".nama_pen"), function(keys, vals) {
+                    // store value
+                    var ThisVal = $(this).val();
+                    // If there is selection, store value and name
+                    if (ThisVal != '-')
+                        SaveSpot[ThisVal] = $(this).prop("name");
+                });
+
+
+                $.each($(".nama_pen"), function(key, value) {
+                    $.each($(this).children(), function(subkey, subvalue) {
+                        if (SaveSpot[$(this).val()]) {
+                            if ($(this).parent("select").prop("name") != SaveSpot[$(this).val()])
+                                $(this).prop("disabled", true);
+                            else
+                                $(this).prop("selected", true);
+                        } else
+                            $(this).prop("disabled", false);
+                    });
+                });
+
+                console.log(SaveSpot);
+            });
+        </script>
+
+        </body>
+
+</html>
