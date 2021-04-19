@@ -1,187 +1,225 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<body style="background-color:black;">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<body>
-<style>
-.my-wrapper { padding-left: 1450px } 
 
-* {box-sizing: border-box}
-body {font-family: Verdana, sans-serif; margin:0}
-.mySlides {display: none}
-img {vertical-align: middle;}
+    <body style="background-color:black;">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-/* Slideshow container */
-.slideshow-container {
-  max-width: 1200px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next and previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/5) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4} 
-  to {opacity: 1}
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-</style>
+        <body>
+            <style>
+                .my-wrapper {
+                    padding-left: 1450px
+                }
+                
+                * {
+                    box-sizing: border-box
+                }
+                
+                body {
+                    font-family: Verdana, sans-serif;
+                    margin: 0
+                }
+                
+                .mySlides {
+                    display: none
+                }
+                
+                img {
+                    vertical-align: middle;
+                }
+                /* Slideshow container */
+                
+                .slideshow-container {
+                    max-width: 1200px;
+                    position: relative;
+                    margin: auto;
+                }
+                /* Next and previous buttons */
+                
+                .prev,
+                .next {
+                    cursor: pointer;
+                    position: absolute;
+                    top: 50%;
+                    width: auto;
+                    padding: 16px;
+                    margin-top: -22px;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 18px;
+                    transition: 0.6s ease;
+                    border-radius: 0 3px 3px 0;
+                    user-select: none;
+                }
+                /* Position the "next button" to the right */
+                
+                .next {
+                    right: 0;
+                    border-radius: 3px 0 0 3px;
+                }
+                /* On hover, add a black background color with a little bit see-through */
+                
+                .prev:hover,
+                .next:hover {
+                    background-color: rgba(0, 0, 0, 0.8);
+                }
+                /* Caption text */
+                
+                .text {
+                    color: #f2f2f2;
+                    font-size: 15px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    bottom: 8px;
+                    width: 100%;
+                    text-align: center;
+                }
+                /* Number text (1/5) */
+                
+                .numbertext {
+                    color: #f2f2f2;
+                    font-size: 12px;
+                    padding: 8px 12px;
+                    position: absolute;
+                    top: 0;
+                }
+                /* The dots/bullets/indicators */
+                
+                .dot {
+                    cursor: pointer;
+                    height: 15px;
+                    width: 15px;
+                    margin: 0 2px;
+                    background-color: #bbb;
+                    border-radius: 50%;
+                    display: inline-block;
+                    transition: background-color 0.6s ease;
+                }
+                
+                .active,
+                .dot:hover {
+                    background-color: #717171;
+                }
+                /* Fading animation */
+                
+                .fade {
+                    -webkit-animation-name: fade;
+                    -webkit-animation-duration: 1.5s;
+                    animation-name: fade;
+                    animation-duration: 1.5s;
+                }
+                
+                @-webkit-keyframes fade {
+                    from {
+                        opacity: .4
+                    }
+                    to {
+                        opacity: 1
+                    }
+                }
+                
+                @keyframes fade {
+                    from {
+                        opacity: .4
+                    }
+                    to {
+                        opacity: 1
+                    }
+                }
+                /* On smaller screens, decrease text size */
+                
+                @media only screen and (max-width: 300px) {
+                    .prev,
+                    .next,
+                    .text {
+                        font-size: 11px
+                    }
+                }
+            </style>
 </head>
+
 <body>
 
-<div class="slideshow-container">
+    <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 5</div>
-  <img src="https://live.staticflickr.com/7202/6925784629_450e18b31f_b.jpg" style="width:100%">
-  <div class="text">"'THE WALKING DEAD'" by Midhras is licensed under CC BY-NC-SA 2.0</div>
-</div>
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 5</div>
+            <img src="https://live.staticflickr.com/7202/6925784629_450e18b31f_b.jpg" style="width:100%">
+            <div class="text">"'THE WALKING DEAD'" by Midhras is licensed under CC BY-NC-SA 2.0</div>
+        </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 5</div>
-  <img src="https://live.staticflickr.com/4149/35272683240_76dd0b8ccb_b.jpg" style="width:100%">
-  <div class="text">"RocketLeague 2017-07-02 01-38-33" by The Bearded Clock is licensed under CC BY-ND 2.0</div>
-</div>
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 5</div>
+            <img src="https://live.staticflickr.com/4149/35272683240_76dd0b8ccb_b.jpg" style="width:100%">
+            <div class="text">"RocketLeague 2017-07-02 01-38-33" by The Bearded Clock is licensed under CC BY-ND 2.0</div>
+        </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-  <img src="https://live.staticflickr.com/3704/32608851963_77eed7609c_b.jpg" style="width:100%">
-  <div class="text">"RocketLeague 1" by The Bearded Clock is licensed under CC BY-ND 2.0</div>
-</div>
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 5</div>
+            <img src="https://live.staticflickr.com/3704/32608851963_77eed7609c_b.jpg" style="width:100%">
+            <div class="text">"RocketLeague 1" by The Bearded Clock is licensed under CC BY-ND 2.0</div>
+        </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">4 / 5</div>
-  <img src="https://live.staticflickr.com/4060/4385200289_b377836c8d_b.jpg" style="width:100%">
-  <div class="text">"Uncharted: Drake's Fortune Nathan Drake character render" by naughty_dog is licensed under CC BY-NC-SA 2.0</div>
-</div>
+        <div class="mySlides fade">
+            <div class="numbertext">4 / 5</div>
+            <img src="https://live.staticflickr.com/4060/4385200289_b377836c8d_b.jpg" style="width:100%">
+            <div class="text">"Uncharted: Drake's Fortune Nathan Drake character render" by naughty_dog is licensed under CC BY-NC-SA 2.0</div>
+        </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">5 / 5</div>
-  <img src="https://live.staticflickr.com/5085/5318791545_45df03718f_b.jpg" style="width:100%">
-  <div class="text">""UNCHARTED 3: Drake's Deception gameplay screenshot" by naughty_dog is licensed under CC BY-NC-SA 2.0</div>
-</div>
+        <div class="mySlides fade">
+            <div class="numbertext">5 / 5</div>
+            <img src="https://live.staticflickr.com/5085/5318791545_45df03718f_b.jpg" style="width:100%">
+            <div class="text">""UNCHARTED 3: Drake's Deception gameplay screenshot" by naughty_dog is licensed under CC BY-NC-SA 2.0</div>
+        </div>
 
-<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-<a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
-</div>
-<br>
+    </div>
+    <br>
 
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span> 
-  <span class="dot" onclick="currentSlide(2)"></span> 
-  <span class="dot" onclick="currentSlide(3)"></span> 
-  <span class="dot" onclick="currentSlide(4)"></span> 
-  <span class="dot" onclick="currentSlide(5)"></span> 
-</div>
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+    </div>
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
 
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-}
-</script>
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
 </body>
-</html> 
+
+</html>
