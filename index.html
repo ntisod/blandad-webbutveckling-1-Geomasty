@@ -1,210 +1,172 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>My personal index</title>
-
-    <style>
-        body {
-            margin: 0;
-            text-align: center;
-            font-family: Verdana;
-            background: #f5f5f5;
-        }
-        
-        h1 {
-            text-align: center;
-            margin-top: 150px;
-        }
-        
-        .container {
-            width: 90%;
-            margin: 0 auto;
-        }
-        
-        input[type="radio"] {
-            display: none;
-        }
-        
-        label {
-            width: 23%;
-            float: left;
-            text-align: center;
-            background: #ffffff;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            color: #222222;
-            padding: 0.5%;
-            margin: 0.5%;
-            margin-bottom: 30px;
-            cursor: pointer;
-        }
-        
-        input[type="radio"][id="blue"]:checked+label {
-            background: #6666ff;
-        }
-        
-        input[type="radio"][id="blue"]:checked~.red,
-        input[type="radio"][id="blue"]:checked~.green {
-            width: 0;
-            height: 0;
-            padding: 0;
-            margin: 0;
-            opacity: 0;
-        }
-        
-        input[type="radio"][id="red"]:checked+label {
-            background: #ff4466;
-        }
-        
-        input[type="radio"][id="red"]:checked~.blue,
-        input[type="radio"][id="red"]:checked~.green {
-            width: 0;
-            height: 0;
-            padding: 0;
-            margin: 0;
-            opacity: 0;
-        }
-        
-        input[type="radio"][id="green"]:checked+label {
-            background: #66dd99;
-        }
-        
-        input[type="radio"][id="green"]:checked~.blue,
-        input[type="radio"][id="green"]:checked~.red {
-            width: 0;
-            height: 0;
-            padding: 0;
-            margin: 0;
-            opacity: 0;
-        }
-        
-        .tile {
-            width: 23%;
-            height: 100px;
-            float: left;
-            transition: all 1s;
-            margin: 0.5%;
-            padding: 0.5%;
-        }
-        
-        .green {
-            background: #1ABC9C;
-        }
-        
-        .blue {
-            background: #3498DB;
-        }
-        
-        .red {
-            background: #ED5565;
-        }
-    </style>
-
+  <meta charset="UTF-8">
+  <title>Amir</title>
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootswatch/3.3.6/cosmo/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
 </head>
-
-
 <body>
 
-    <h1>Sites!</h1>
-    <div class="container">
+<body> 
+  
+ <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Open it</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Amir Index</a>
+    </div>
 
-        <input type="radio" id="blue" name="color" />
-        <label for="blue">Done projects</label>
-        <input type="radio" id="red" name="color" />
-        <label for="red">Abandoned projects</label>
-        <input type="radio" id="green" name="color" />
-        <label for="green">Ongoing projects</label>
-        <input type="radio" id="reset" name="color" />
-        <label for="reset">RESET</label>
-
-        <!--
-done = blue
-Ongoing = red
-Beta = green
--->
-
-        <div class="tile blue "><a href="InfoOmMig.html"> OmMigSidan! </a>
-            <p> This site includes information about me.. </p>
-        </div>
-
-
-        <div class="tile blue "><a href="Gallery.html "> Gallerian </a>
-            <p> This site includes pictures with swipefunction and copyright information.. </p>
-        </div>
-
-
-        <div class="tile blue "><a href="IndividuellVal.html "> IndividuellVal </a>
-            <p> This site is an application for the 3rd years choice in highschool </p>
-        </div>
-
-
-        <div class="tile green "><a href="hypa.html"> Hypa </a>
-            <p> A simple css based game that require you to dodge the upcoming enenmies </p>
-        </div>
-
-
-        <div class="tile green "><a href="demo.html"> Demo </a>
-            <p> A newer version of index that is still undergoing maintainance </p>
-        </div>
-
-
-        <div class="tile blue">1</div>
-
-
-        <div class="tile red">2</div>
-
-
-        <div class="tile blue">3</div>
-
-
-        <div class="tile green">4</div>
-
-
-        <div class="tile blue">5</div>
-
-
-        <div class="tile red">6</div>
-
-
-        <div class="tile red">7</div>
-
-
-        <div class="tile green">8</div>
-
-
-        <div class="tile blue">9</div>
-
-
-        <div class="tile green">10</div>
-
-
-        <div class="tile red">11</div>
-
-
-        <div class="tile green">12</div>
-
-
-        <div class="tile blue">13</div>
-
-
-        <div class="tile blue">14</div>
-
-
-        <div class="tile green">15</div>
-
-
-        <div class="tile red">16</div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About-me">More about me</a></li>
+        <li><a href="#Portfolio">Site</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+          
+  
+  <div class ="scrollspy intro-header" id = "Home">
+    <div class="jumbotron centerize">
+      <h1  style="color: black">Amir</h1>
+      <p style="color: black; font-weight:400">NTI student</p>
+      <a href="LINK" class="btn btn-default" target="_blank">GitHub</a>
+        <a href="LINK" class="btn btn-default" target="_blank">Facebook</a>
+        <a href="LINK" class="btn btn-default" target="_blank" role="button">instagram</a>
+    </div>
     </div>
 
 
+  <div class="about-me"   id ="About-me">
+        <h2 class ="scrollspy">About Me</h2>
+        <hr>
+        <div class="row">
+          <p style="text-indent: 2em;">  Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah </p>
+        </div>
+    </hr>
+  </div>
 
 
+
+  <div class="portfolio"  id ="Portfolio">
+    <h2 class="scrollspy">My sites</h2>
+    
+    <h3>Site view</h3>
+    <hr></hr>
+      <div class="row">
+        <div class=" col-xs--12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="thumbnail">
+            <img src="https://i.imgur.com/0r7qN8U.jpg" alt="...">
+            <div class="caption">
+              <h3>BB</h3>
+              <p>NN</p>
+              <p><a href="#" class="btn btn-primary" role="button">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-xs--12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="thumbnail">
+            <img src="https://i.imgur.com/0r7qN8U.jpg alt="...">
+            <div class="caption">
+              <h3>BB</h3>
+              <p>NN</p>
+              <p><a href="#" class="btn btn-primary" role="button">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-xs--12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="thumbnail">
+            <img src="https://i.imgur.com/0r7qN8U.jpg" alt="...">
+            <div class="caption">
+              <h3>BB</h3>
+              <p>NN</p>
+              <p><a href="#" class="btn btn-primary" role="button">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <h3>Title 2</h3>
+    <hr></hr>
+    <div class="row">
+        <div class=" col-xs--12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="thumbnail">
+            <img src="https://i.imgur.com/0r7qN8U.jpg" alt="...">
+            <div class="caption">
+              <h3>BB</h3>
+              <p>NN</p>
+              <p><a href="#" class="btn btn-primary" role="button">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-xs--12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="thumbnail">
+ <img src="https://i.imgur.com/0r7qN8U.jpg" alt="...">
+            <div class="caption">
+              <h3>BB</h3>
+              <p>NN</p>
+              <p><a href="#" class="btn btn-primary" role="button">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-xs--12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="thumbnail">
+            <img src="https://i.imgur.com/0r7qN8U.jpg" alt="...">
+            <div class="caption">
+              <h3>BB</h3>
+              <p>NN</p>
+              <p><a href="#" class="btn btn-primary" role="button">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <h3>PPs</h3>
+    <hr></hr>
+    <div class="row">
+        <div class=" col-xs--12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="thumbnail">
+           <img src="https://i.imgur.com/0r7qN8U.jpg" alt="...">
+            <div class="caption">
+              <h3>BB</h3>
+              <p>NN</p>
+              <p><a href="#" class="btn btn-primary" role="button">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-xs--12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="thumbnail">
+           <img src="https://i.imgur.com/0r7qN8U.jpg" alt="...">
+            <div class="caption">
+              <h3>BB</h3>
+              <p>NN</p>
+              <p><a href="#" class="btn btn-primary" role="button">GitHub</a>
+            </div>
+          </div>
+        </div>
+        <div class=" col-xs-12 col-sm-4 col-md-4 col-lg-4 ">
+          <div class="thumbnail">
+           <img src="https://i.imgur.com/0r7qN8U.jpg" alt="...">
+            <div class="caption">
+              <h3>BB</h3>
+              <p>NN</p>
+              <p><a href="#" class="btn btn-primary" role="button">GitHub</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+  </div>
 
 </body>
+  <script src="jquery-3.6.0.min.js"></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script><script  src="./script22.js"></script>
 
-
-
+</body>
 </html>
