@@ -26,3 +26,5 @@ function clickEffect(e) {
   }.bind(this));
 }
 document.addEventListener('click', clickEffect);
+
+
