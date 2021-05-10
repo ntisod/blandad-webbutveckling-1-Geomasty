@@ -1,210 +1,51 @@
-<!doctype html>
-<html lang="en">
-
+<!DOCTYPE html>
+<html lang="en" >
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>My personal index</title>
-
-    <style>
-        body {
-            margin: 0;
-            text-align: center;
-            font-family: Verdana;
-            background: #f5f5f5;
-        }
-        
-        h1 {
-            text-align: center;
-            margin-top: 150px;
-        }
-        
-        .container {
-            width: 90%;
-            margin: 0 auto;
-        }
-        
-        input[type="radio"] {
-            display: none;
-        }
-        
-        label {
-            width: 23%;
-            float: left;
-            text-align: center;
-            background: #ffffff;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-            color: #222222;
-            padding: 0.5%;
-            margin: 0.5%;
-            margin-bottom: 30px;
-            cursor: pointer;
-        }
-        
-        input[type="radio"][id="blue"]:checked+label {
-            background: #6666ff;
-        }
-        
-        input[type="radio"][id="blue"]:checked~.red,
-        input[type="radio"][id="blue"]:checked~.green {
-            width: 0;
-            height: 0;
-            padding: 0;
-            margin: 0;
-            opacity: 0;
-        }
-        
-        input[type="radio"][id="red"]:checked+label {
-            background: #ff4466;
-        }
-        
-        input[type="radio"][id="red"]:checked~.blue,
-        input[type="radio"][id="red"]:checked~.green {
-            width: 0;
-            height: 0;
-            padding: 0;
-            margin: 0;
-            opacity: 0;
-        }
-        
-        input[type="radio"][id="green"]:checked+label {
-            background: #66dd99;
-        }
-        
-        input[type="radio"][id="green"]:checked~.blue,
-        input[type="radio"][id="green"]:checked~.red {
-            width: 0;
-            height: 0;
-            padding: 0;
-            margin: 0;
-            opacity: 0;
-        }
-        
-        .tile {
-            width: 23%;
-            height: 100px;
-            float: left;
-            transition: all 1s;
-            margin: 0.5%;
-            padding: 0.5%;
-        }
-        
-        .green {
-            background: #1ABC9C;
-        }
-        
-        .blue {
-            background: #3498DB;
-        }
-        
-        .red {
-            background: #ED5565;
-        }
-    </style>
-
+  <meta charset="UTF-8">
+  <title>Index</title>
+  <link href='https://fonts.googleapis.com/css?family=Josefin+Slab' rel='stylesheet' type='text/css'><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'><link rel="stylesheet" href="./style43.css">
 </head>
-
-
 <body>
-
-    <h1>Sites!</h1>
-    <div class="container">
-
-        <input type="radio" id="blue" name="color" />
-        <label for="blue">Done projects</label>
-        <input type="radio" id="red" name="color" />
-        <label for="red">Abandoned projects</label>
-        <input type="radio" id="green" name="color" />
-        <label for="green">Ongoing projects</label>
-        <input type="radio" id="reset" name="color" />
-        <label for="reset">RESET</label>
-
-        <!--
-done = blue
-Ongoing = red
-Beta = green
--->
-
-        <div class="tile blue "><a href="InfoOmMig.html"> OmMigSidan! </a>
-            <p> This site includes information about me.. </p>
-        </div>
-
-
-        <div class="tile blue "><a href="Gallery.html "> Gallerian </a>
-            <p> This site includes pictures with swipefunction and copyright information.. </p>
-        </div>
-
-
-        <div class="tile blue "><a href="IndividuellVal.html "> IndividuellVal </a>
-            <p> This site is an application for the 3rd years choice in highschool </p>
-        </div>
-
-
-        <div class="tile green "><a href="hypa.html"> Hypa </a>
-            <p> A simple css based game that require you to dodge the upcoming enenmies </p>
-        </div>
-
-
-        <div class="tile green "><a href="demo.html"> Demo </a>
-            <p> A newer version of index that is still undergoing maintainance </p>
-        </div>
-
-
-        <div class="tile blue">1</div>
-
-
-        <div class="tile red">2</div>
-
-
-        <div class="tile blue">3</div>
-
-
-        <div class="tile green">4</div>
-
-
-        <div class="tile blue">5</div>
-
-
-        <div class="tile red">6</div>
-
-
-        <div class="tile red">7</div>
-
-
-        <div class="tile green">8</div>
-
-
-        <div class="tile blue">9</div>
-
-
-        <div class="tile green">10</div>
-
-
-        <div class="tile red">11</div>
-
-
-        <div class="tile green">12</div>
-
-
-        <div class="tile blue">13</div>
-
-
-        <div class="tile blue">14</div>
-
-
-        <div class="tile green">15</div>
-
-
-        <div class="tile red">16</div>
+<div id="landing">
+  <div class="svg-wrapper">
+    <a id="jump" href="#portfolio">
+      <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+    <rect class="shape" height="60" width="320" />
+    <div class="text">Elias The Third</div>
+    </svg></a>
+  </div>
+</div>
+<div id="portfolio">
+  <div id="port-wrapper">
+    <div class="text-2">
+      <button id="first" href="#text-changer-1"><h2>About me</h2></button>
+      <button id="second" href="#text-changer-2"><h2>My sites</h2></button>
+      <button id="third" href="#text-changer-3"><h2>Contacts</h2></button>
+      <div id="text-changer-1" class="content">
+        <p>My name is Elias and im done.</p>
+      </div>
+      <div id="text-changer-2" class="content row">
+        <div class="col-sm-3 col-xs-6">Project 1<br><div class="project"></div></div>
+        <div class="col-sm-3 col-xs-6">Project 2<br><div class="project"></div></div>
+        <div class="col-sm-3 col-xs-6">Project 3<br><div class="project"></div></div>
+        <div class="col-sm-3 col-xs-6">Project 4<br><div class="project"></div></div>
+      </div>
+      <div id="text-changer-3" class="content">
+        <p>View my youtube channel or my :<br>
+          <div class="social">
+            <a href="https://twitter.com/kanou_david" target="_blank"><i class="fa fa-twitter fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/david.kanou/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/channel/UCarQ3-cWr-8vGl6xeJSSKxg" target="_blank"><i class="fa fa-youtube fa-2x" aria-hidden="true"></i></a>
+          </div>
+        </p>
+      </div>
     </div>
-
-
-
-
+  </div>
+</div>
+<!-- partial -->
+   <script src="jquery-3.6.0.min.js"></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.2/jquery.smooth-scroll.min.js'></script><script  src="./script43.js"></script>
 
 </body>
-
-
-
 </html>
