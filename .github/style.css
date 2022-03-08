@@ -1,0 +1,105 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+
+@import url(https://fonts.googleapis.com/css?family?Droid+Serif:400,400italic,700,700italic);
+
+.row .columns{
+	padding: 5px 5px;
+}
+section.gallery{
+	padding: 10px 0 20px 0;
+}
+h1{
+	font-family: 'Open Sans', sans-serif;
+}
+p{
+	font-family: 'Droid Serif', serif;
+	font-size: 18px;
+}
+p.subhead{
+	font-family: 'Droid Serif', serif;
+	font-size: 20px;
+}
+p.snippet{
+	font-weight: 100;
+	font-style: italic;
+	font-size: 24px;
+	text-align: right;
+	padding: 40px 0 0 40px;
+	color: #ccc;
+}
+p.snippet.left{
+	text-align: left;
+	top: 20px;
+	padding: 0px 40px 0 0;
+}
+
+p.dropcap:first-child:first-letter { 
+	float: left; 
+	font-size: 85px; 
+	line-height: 60px; 
+	padding-top: 8px; 
+	padding-right: 8px; 
+	padding-left: 0px; 
+}
+
+header{
+	padding-top: 40px;
+}
+
+section.photo{
+	width: 100%;
+  	height: 100%;
+	min-height: 600px;
+	position: relative;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover !important;
+  	-moz-background-size: cover !important;
+  	-o-background-size: cover !important;
+  	background-size: cover !important;
+}
+/*section.photo{
+	width: 100%;
+  height: 100%;
+  min-height: 100%;
+  background: #464646 url("../img/background.jpg") no-repeat top center fixed;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-attachment: fixed;
+  background-size: cover !important;
+  margin: 0;
+  padding: 0; 
+}
+*/
+section.author{
+	border: 1px solid #ddd;
+	padding: 20px 20px 10px;
+}
+section.author img.round{
+	float: left;
+	padding-right: 20px;
+	width: 140px;
+}
+
+img.round{
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+}
+
+.author h5{
+	font-family: 'Droid Serif', serif;
+	font-size: 22px;;
+}
+
+
+footer{
+	background: #000000;
+	color: #ffffff;
+	text-align: center;
+	font-size: 12px;
+	padding: 20px;
+	margin-top: 40px;
+}
